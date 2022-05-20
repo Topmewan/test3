@@ -1,0 +1,38 @@
+.card {
+	padding: 14px 23px 17px 35px;
+	border: 1px solid black;
+
+	.top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		> {
+			span {
+				margin-left: 15px;
+				font-family: 'Open Sans';
+				font-style: normal;
+				font-weight: 700;
+				font-size: 12px;
+				line-height: 16px;
+				text-transform: capitalize;
+
+				color: #000000;
+			}
+		}
+	}
+
+	.body {
+		max-width: 421px;
+		width: 100%;
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 17px;
+		text-align: left;
+		/* or 142% */
+
+		color: rgba(0, 0, 0, 0.41);
+	}
+}
