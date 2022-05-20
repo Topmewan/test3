@@ -7,7 +7,7 @@ import styles from './UsersList.module.scss';
 
 export const UsersList = () => {
 	const dispatch = useDispatch();
-	const { users } = useSelector((state) => state.users);
+	const { users, isLoading } = useSelector((state) => state.users);
 
 	useEffect(() => {
 		dispatch(fetchUsers());
@@ -25,11 +25,15 @@ export const UsersList = () => {
 						<Typography color='lightgray' text='1000' variant='title' />
 					</div>
 				</div>
-				<div className={styles.list}>
-					{previewUsers?.map((user) => (
-						<UserCard key={user.id} user={user} />
-					))}
-				</div>
+				{isLoading ? (
+					<h1>Loading...</h1>
+				) : (
+					<div className={styles.list}>
+						{previewUsers?.map((user) => (
+							<UserCard key={user.id} user={user} />
+						))}
+					</div>
+				)}
 			</div>
 		</section>
 	);
