@@ -5,7 +5,7 @@ export const AboutGroup = () => {
 	return (
 		<section className={styles.about}>
 			<div className={styles.container}>
-				<Typography text='О группе' variant='title' />
+				<Typography className={styles.title} text='О группе' variant='title' />
 				<p>
 					Twenty One Pilots — американский дуэт из Колумбуса, штат Огайо. Группа
 					образовалась в 2009 году и на данный момент состоит из Тайлера Джозефа

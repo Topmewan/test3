@@ -1,13 +1,13 @@
 import styles from './UserInfo.module.scss';
 import { Typography, IButton } from './../../../ui-kit';
 
-export const UserInfo = () => {
+export const UserInfo = ({ user }) => {
 	return (
 		<section className={styles.info}>
 			<div className={styles.first}>
 				<div className={styles.container}>
 					<div className={styles.top}>
-						<Typography text='Иван Хуй' variant='title' />
+						<Typography text={user?.name} variant='title' />
 					</div>
 				</div>
 			</div>
@@ -15,9 +15,9 @@ export const UserInfo = () => {
 				<div className={styles.container}>
 					<div className={styles.bottom}>
 						<ul>
-							<li>Санкт-Петербург</li>
-							<li>ivanov@mail.com</li>
-							<li>+7 (821) 311-21-32</li>
+							<li>{user?.address?.city}</li>
+							<li>{user?.email}</li>
+							<li>{user?.phone}</li>
 						</ul>
 						<IButton variant='dark'>Написать сообщение</IButton>
 						<IButton variant='dark'>Предложить сходить на концерт</IButton>

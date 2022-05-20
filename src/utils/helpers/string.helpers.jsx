@@ -1,6 +1,6 @@
-export const postContentPreview = (text) => {
-	if (text.length > 60) {
-		return `${text.substring(0, 60) + '...'}`;
+export const postContentPreview = (text, num) => {
+	if (text.length > num) {
+		return `${text.substring(0, num) + '...'}`;
 	} else {
 		return text;
 	}
