@@ -1,37 +1,37 @@
 .navbar {
-	height: 70px;
-	background-color: #101010;
+  height: 70px;
+  background-color: #101010;
 
-	.container {
-		height: 100%;
-		max-width: 1017px;
-		padding: 0 15px;
-		margin: 0 auto;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+  .container {
+    height: 100%;
+    max-width: 1017px;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-		a {
-			h1 {
-				font-family: 'Alegreya Sans SC';
-				font-style: normal;
-				font-weight: 700;
-				font-size: 28px;
-				line-height: 60px;
-				text-align: center;
-				text-transform: uppercase;
-				color: #ffffff;
-			}
-		}
+    a {
+      h1 {
+        font-family: "Alegreya Sans SC";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 60px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #ffffff;
+      }
+    }
 
-		.action {
-			display: flex;
-			gap: 12px;
-			align-items: center;
+    .action {
+      display: flex;
+      gap: 12px;
+      align-items: center;
 
-			@media (max-width: 768px) {
-				display: none;
-			}
-		}
-	}
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+  }
 }

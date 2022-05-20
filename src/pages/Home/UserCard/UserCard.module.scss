@@ -1,22 +1,22 @@
 .card {
-	flex: 1;
-	padding: 14px 17px 15px 17px;
-	border: 1px solid #dadada;
-	display: flex;
-	flex-direction: column;
+  flex: 1;
+  padding: 14px 17px 15px 17px;
+  border: 1px solid #dadada;
+  display: flex;
+  flex-direction: column;
 
-	span {
-		font-family: 'Open Sans';
-		font-style: normal;
-		font-weight: 400;
-		font-size: 12px;
-		line-height: 17px;
-		color: rgba(0, 0, 0, 0.41);
-	}
+  span {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    color: rgba(0, 0, 0, 0.41);
+  }
 
-	.button {
-		margin-top: 35px;
-		align-self: flex-start;
-		max-height: 35px;
-	}
+  .button {
+    margin-top: 35px;
+    align-self: flex-start;
+    max-height: 35px;
+  }
 }

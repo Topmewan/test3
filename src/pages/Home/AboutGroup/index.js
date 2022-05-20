@@ -1,1 +1,1 @@
-export { AboutGroup as default } from './AboutGroup';
+export { AboutGroup as default } from "./AboutGroup";

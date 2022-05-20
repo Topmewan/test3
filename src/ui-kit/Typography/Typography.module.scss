@@ -1,22 +1,22 @@
 .typography {
-	color: black;
-	font-weight: 500;
-	font-size: 1rem;
-	font-style: normal;
+  color: black;
+  font-weight: 500;
+  font-size: 1rem;
+  font-style: normal;
 
-	&.title {
-		font-family: 'Alegreya Sans SC';
-		font-style: normal;
-		font-weight: 500;
-		font-size: 35px;
-		line-height: 40px;
-	}
+  &.title {
+    font-family: "Alegreya Sans SC";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 40px;
+  }
 
-	&.subtitle {
-		font-family: 'Open Sans';
-		font-weight: 700;
-		font-size: 17px;
-		line-height: 23px;
-		text-transform: capitalize;
-	}
+  &.subtitle {
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 23px;
+    text-transform: capitalize;
+  }
 }

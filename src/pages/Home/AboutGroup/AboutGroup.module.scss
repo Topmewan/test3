@@ -1,32 +1,32 @@
 .about {
-	width: 100%;
-	margin: 48px 0 38px 0;
+  width: 100%;
+  margin: 48px 0 38px 0;
 
-	.container {
-		max-width: 1017px;
-		padding: 0 15px;
-		margin: 0 auto;
-		display: flex;
-		align-items: flex-start;
-		gap: 28px;
+  .container {
+    max-width: 1017px;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 28px;
 
-		@media (max-width: 650px) {
-			flex-direction: column;
-		}
+    @media (max-width: 650px) {
+      flex-direction: column;
+    }
 
-		.title {
-			flex: 1 0 auto;
-		}
+    .title {
+      flex: 1 0 auto;
+    }
 
-		p {
-			align-self: center;
-			font-family: 'Open Sans';
-			font-style: normal;
-			font-weight: 600;
-			font-size: 16px;
-			line-height: 24px;
-			color: #939393;
-			text-align: justify;
-		}
-	}
+    p {
+      align-self: center;
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      color: #939393;
+      text-align: justify;
+    }
+  }
 }

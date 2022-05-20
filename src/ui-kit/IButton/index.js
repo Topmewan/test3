@@ -1,1 +1,1 @@
-export { IButton as default } from './IButton';
+export { IButton as default } from "./IButton";
