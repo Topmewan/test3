@@ -1,90 +1,91 @@
 .header {
-  overflow: hidden;
-  background-position: center 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: calc(100vh - 70px);
-  position: relative;
+	overflow: hidden;
+	background-position: center 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: calc(100vh - 70px);
+	background-color: black;
+	position: relative;
 
-  .title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    min-height: 300px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-    background: radial-gradient(
-      50% 50% at 50% 50%,
-      #000000 0%,
-      rgba(0, 0, 0, 0) 100%
-    );
-    text-align: center;
+	.title {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		min-height: 300px;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		justify-content: center;
+		align-items: center;
+		background: radial-gradient(
+			50% 50% at 50% 50%,
+			#000000 0%,
+			rgba(0, 0, 0, 0) 100%
+		);
+		text-align: center;
 
-    @media (max-width: 400px) {
-      gap: 40px;
-    }
+		@media (max-width: 400px) {
+			gap: 40px;
+		}
 
-    h1 {
-      font-family: "Alegreya Sans SC";
-      font-style: normal;
-      font-weight: 700;
-      font-size: 50px;
-      line-height: 100%;
-      color: #ffffff;
-      height: 60px;
-    }
-    h2 {
-      font-family: "Alegreya Sans SC";
-      font-style: normal;
-      font-weight: 700;
-      font-size: 30px;
-      line-height: 36px;
-      color: #ffffff;
-    }
-  }
+		h1 {
+			font-family: 'Alegreya Sans SC';
+			font-style: normal;
+			font-weight: 700;
+			font-size: 50px;
+			line-height: 100%;
+			color: #ffffff;
+			height: 60px;
+		}
+		h2 {
+			font-family: 'Alegreya Sans SC';
+			font-style: normal;
+			font-weight: 700;
+			font-size: 30px;
+			line-height: 36px;
+			color: #ffffff;
+		}
+	}
 
-  .action {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 45px;
-    width: 100%;
-    max-width: 1017px;
-    padding: 0 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+	.action {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 45px;
+		width: 100%;
+		max-width: 1017px;
+		padding: 0 15px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 
-    .sliderButton {
-      width: 40px;
-      height: 40px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: transparent;
-      border: 1px solid #ffff;
-      cursor: pointer;
+		.sliderButton {
+			width: 40px;
+			height: 40px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: transparent;
+			border: 1px solid #ffff;
+			cursor: pointer;
 
-      svg {
-        path {
-          fill: white;
-        }
-      }
+			svg {
+				path {
+					fill: white;
+				}
+			}
 
-      &:hover {
-        background-color: #ffff;
+			&:hover {
+				background-color: #ffff;
 
-        svg {
-          path {
-            fill: black;
-          }
-        }
-      }
-    }
-  }
+				svg {
+					path {
+						fill: black;
+					}
+				}
+			}
+		}
+	}
 }

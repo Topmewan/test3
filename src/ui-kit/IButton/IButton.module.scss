@@ -10,6 +10,7 @@
 	font-weight: 600;
 	background: transparent;
 	cursor: pointer;
+	font-family: 'Open Sans';
 
 	&.light {
 		padding: 11.5px 40px;
@@ -22,7 +23,6 @@
 
 	&.dark {
 		min-height: 35px;
-		font-family: 'Open Sans';
 		font-style: normal;
 		color: #fff;
 		font-size: 11px;
