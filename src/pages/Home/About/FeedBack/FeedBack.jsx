@@ -5,7 +5,7 @@ export const FeedBack = () => {
 	return (
 		<form className={styles.feedback}>
 			<p className={styles.title}>Оставить заявку на проведение концерта</p>
-			<textarea name='' id='' cols='30' rows='10'></textarea>
+			<textarea placeholder='Расскажите о вашем предложении'></textarea>
 			<IButton className={styles.button} variant='dark'>
 				Отправить
 			</IButton>

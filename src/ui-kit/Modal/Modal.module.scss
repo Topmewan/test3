@@ -1,0 +1,24 @@
+.Modal {
+	&.open {
+	}
+
+	&.header {
+		h2 {
+			font-size: 20px;
+		}
+	}
+
+	&.content {
+		margin-top: 20px;
+	}
+
+	&.default {
+		padding: 40px;
+	}
+
+	.react-responsive-modal-root .react-responsive-modal-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}

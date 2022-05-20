@@ -29,3 +29,15 @@ a {
 ul li {
 	list-style: none;
 }
+
+.modal {
+	width: 100%;
+	max-width: 320px;
+	min-height: 300px;
+	padding-top: 2rem;
+	margin: 0;
+}
+
+.close {
+	top: 0;
+}

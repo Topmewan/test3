@@ -19,12 +19,17 @@ const getPostComments = (id) => {
 	return api.get(`/posts/${id}/comments`);
 };
 
+const addPostComment = (id, data) => {
+	return api.post(`/comments?postId=${id}`, data);
+};
+
 const TotalService = {
 	getUsers,
 	getUser,
 	getUserPosts,
 	getPostComments,
 	getPost,
+	addPostComment,
 };
 
 export default TotalService;

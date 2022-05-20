@@ -1,11 +1,18 @@
-import { useFetch } from '../../../hooks/useFetch';
-import TotalService from '../../../services/TotalApi';
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { UserCard } from '../UserCard/UserCard';
 import { Typography } from './../../../ui-kit';
+import { fetchUsers } from '../../../feature/reducers/users/users.actions';
 import styles from './UsersList.module.scss';
 
 export const UsersList = () => {
-	const { data: users, isLoading } = useFetch(TotalService.getUsers);
+	const dispatch = useDispatch();
+	const { users } = useSelector((state) => state.users);
+
+	useEffect(() => {
+		dispatch(fetchUsers());
+	}, [dispatch]);
+
 	const previewUsers = users?.slice(0, 4);
 
 	return (
