@@ -1,8 +1,8 @@
 import { Typography, IButton, FormField } from './../../ui-kit';
 import { useParams } from 'react-router-dom';
 import { Card } from './Card/Card';
-import 'react-responsive-modal/styles.css';
 import { Modal } from 'react-responsive-modal';
+import 'react-responsive-modal/styles.css';
 import { useModal } from './../../hooks/useModal';
 
 import { schema } from './validation';
@@ -11,7 +11,6 @@ import { yupResolver } from '@hookform/resolvers/yup';
 
 import { useComments } from '../../hooks/useComments';
 import { uploadComment } from '../../feature/reducers/comments/comments.actions';
-import { addComment } from '../../feature/reducers/comments/comments.slice';
 
 import styles from './PostPage.module.scss';
 
@@ -29,13 +28,12 @@ export const PostPage = () => {
 
 	const onSubmit = async (data) => {
 		const info = {
-			postid: id,
+			postId: id,
 			...data,
 		};
 
 		dispatch(uploadComment({ id: id, data: info })).then(() => {
 			reset();
-			dispatch(addComment(info));
 			closeModal();
 		});
 	};
